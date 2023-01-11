@@ -20,7 +20,7 @@ and I'd be happy to take PRs to support other operating systems.
 
 ## docs
 
-- [instructions](#instructions)
+- [instructions](#instructions) (see below)
 - [`fish/`](fish) — config files that get copied over for fish initialization
 - [`vscode/`](vscode) — config files for VSCode (copied over unless they exist)
 - [`keyrate/`](keyrate) — speedy keyboard repeat rates
