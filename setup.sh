@@ -96,7 +96,6 @@ else
   npm i -g npm
   npm i -g @feltcoop/gro
   mkdir -p "$FISH_CONFIG_DIR"
-  copy "$REPO_DIR/fish/fnm.fish" "$FISH_CONFIG_DIR"
   copy "$REPO_DIR/fish/settings.fish" "$FISH_CONFIG_DIR"
 fi
 
