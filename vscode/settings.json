@@ -1,0 +1,48 @@
+{
+	"window.titleBarStyle": "custom",
+	"telemetry.telemetryLevel": "off",
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#1A1A1A",
+		"statusBar.noFolderBackground": "#212121",
+		"statusBar.debuggingBackground": "#263238"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"eslint.validate": ["javascript", "svelte"],
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 2,
+	"prettier.printWidth": 100,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
+	"prettier.bracketSpacing": false,
+	"prettier.requireConfig": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
+	"workbench.activityBar.visible": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"window.zoomLevel": 1,
+	"terminal.integrated.defaultProfile.linux": "fish"
+}

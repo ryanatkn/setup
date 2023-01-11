@@ -1,0 +1,46 @@
+[
+	{
+		"key": "ctrl+,",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "ctrl+shift+alt+,",
+		"command": "workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "-workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+'",
+		"command": "workbench.action.terminal.focusNext"
+	},
+	{
+		"key": "ctrl+shift+'",
+		"command": "workbench.action.terminal.focusPrevious"
+	},
+	{
+		"key": "ctrl+alt+'",
+		"command": "workbench.action.terminal.focusNextPane"
+	},
+	{
+		"key": "ctrl+alt+shift+'",
+		"command": "workbench.action.terminal.focusPreviousPane"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+alt+-",
+		"command": "workbench.action.navigateBack"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "workbench.action.navigateForward"
+	}
+]
