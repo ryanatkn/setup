@@ -1,7 +1,7 @@
 # setup instructions and resources for my dev environment
 
 This repo has docs, configs, and scripts for setting up my dev environment from scratch.
-It's designed for Ubuntu for both standalone installations and WSL,
+It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL,
 and I'd be happy to take PRs to support other operating systems.
 
 > my bash skills aren't that good! I'd appreciate help improving
