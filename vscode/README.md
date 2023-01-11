@@ -24,3 +24,7 @@ You can manually copy the config files:
   press `ctrl+shift+p`, `Preferences: Configure User Snippets`, `New Global Snippets file...`
 
 > TODO automated solution for configuring VSCode in Windows?
+
+## resources
+
+- [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)

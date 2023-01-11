@@ -6,9 +6,8 @@ It supports the following software:
 
 - [fish](https://fishshell.com/) shell
 - NodeJS: [nodejs.org](https://nodejs.org/)
-- [VSCode](https://code.visualstudio.com/) (recommended for
-  [its Svelte support](https://github.com/sveltejs/language-tools))
-  - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+- [VSCode](https://code.visualstudio.com/) - recommended for
+  [its Svelte support](https://github.com/sveltejs/language-tools)
 - Svelte: [svelte.dev](https://svelte.dev/) (configured in VSCode)
 - [Postgres](https://www.postgresql.org/)
 - my task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
