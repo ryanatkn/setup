@@ -1,6 +1,18 @@
 # setup instructions and resources for my dev environment
 
 This repo has docs, configs, and scripts for setting up my dev environment from scratch.
+
+It supports following software:
+
+- [fish](https://fishshell.com/) shell
+- NodeJS: [nodejs.org](https://nodejs.org/)
+- [VSCode](https://code.visualstudio.com/) (recommended for
+  [its Svelte support](https://github.com/sveltejs/language-tools))
+  - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+- Svelte: [svelte.dev](https://svelte.dev/) (configured in VSCode)
+- [Postgres](https://www.postgresql.org/)
+- my task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
+
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL,
 and I'd be happy to take PRs to support other operating systems.
 
@@ -63,18 +75,6 @@ gg # alias for `gro dev`
 - [`keyrate/`](keyrate) — speedy keyboard repeat rates
 - [`windows/`](windows) — extra steps and notes for Windows users
 - [`postgres/`](postgres) — extra steps for Windows WSL users
-
-## links and resources
-
-- task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
-- Svelte: [svelte.dev](https://svelte.dev/)
-- SvelteKit: [kit.svelte.dev](https://kit.svelte.dev/)
-- [fish](https://fishshell.com/) shell
-- [VSCode](https://code.visualstudio.com/) (recommended for
-  [its Svelte support](https://github.com/sveltejs/language-tools))
-  - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-- [Postgres](https://www.postgresql.org/)
-- [Git](https://git-scm.com/)
 
 ## license 🐦
 
