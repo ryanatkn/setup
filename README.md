@@ -18,6 +18,14 @@ and I'd be happy to take PRs to support other operating systems.
 > my bash skills aren't that good! I'd appreciate help improving
 > [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
 
+## docs
+
+- [`fish/`](fish) — config files that get copied over for fish initialization
+- [`vscode/`](vscode) — config files for VSCode (copied over unless they exist)
+- [`keyrate/`](keyrate) — speedy keyboard repeat rates
+- [`windows/`](windows) — extra steps and notes for Windows users
+- [`postgres/`](postgres) — extra steps for Windows WSL users
+
 ## instructions
 
 Requirements:
@@ -60,14 +68,6 @@ gg # alias for `gro dev`
 ```
 
 > learn more about [`@feltcoop/gro`](https://github.com/feltcoop/gro)
-
-## docs
-
-- [`fish/`](fish) — config files that get copied over for fish initialization
-- [`vscode/`](vscode) — config files for VSCode (copied over unless they exist)
-- [`keyrate/`](keyrate) — speedy keyboard repeat rates
-- [`windows/`](windows) — extra steps and notes for Windows users
-- [`postgres/`](postgres) — extra steps for Windows WSL users
 
 ## license 🐦
 
