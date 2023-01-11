@@ -2,7 +2,7 @@
 
 This repo has docs, configs, and scripts for setting up my dev environment from scratch.
 
-It supports following software:
+It supports the following software:
 
 - [fish](https://fishshell.com/) shell
 - NodeJS: [nodejs.org](https://nodejs.org/)
