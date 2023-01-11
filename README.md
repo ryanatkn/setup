@@ -5,7 +5,7 @@ It's designed for distros with `apt` like Ubuntu for both standalone installatio
 and I'd be happy to take PRs to support other operating systems.
 
 > my bash skills aren't that good! I'd appreciate help improving
-> [the script](setup.sh)'s code quality
+> [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
 
 Required:
 
