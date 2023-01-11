@@ -73,6 +73,7 @@ gg # alias for `gro dev`
 - [VSCode](https://code.visualstudio.com/) (recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools))
   - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+- [Postgres](https://www.postgresql.org/)
 - [Git](https://git-scm.com/)
 
 ## license 🐦
