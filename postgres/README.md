@@ -7,6 +7,7 @@ However there's a caveat for Windows users:
 
 `systemctl` and systemd [aren't yet supported by WSL](https://github.com/microsoft/WSL/issues/994)
 at the time this was written,
+(**update**: [read here, this is out of date for Windows 11 Users](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/))
 so WSL users have to jump through some extra hoops to make Postgres start automatically.
 
 The command to start the current version of Postgres is `sudo pg_ctlcluster 14 main start`.
