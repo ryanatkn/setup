@@ -4,13 +4,13 @@ This repo has docs, configs, and scripts for setting up my dev environment from 
 
 It supports the following software:
 
-- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 - NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
 - [VSCode](https://code.visualstudio.com/) — recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools)
 - Svelte: [svelte.dev](https://svelte.dev/) — configured in VSCode
 - [Postgres](https://www.postgresql.org/)
 - my task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
+- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL,
 and I'd be happy to take PRs to support other operating systems.
