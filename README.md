@@ -4,21 +4,25 @@ This repo has docs, configs, and scripts for setting up my dev environment from 
 It's designed for Ubuntu for both standalone installations and WSL,
 and I'd be happy to take PRs to support other operating systems.
 
+> my bash skills aren't that good! I'd appreciate help improving
+> [the script](setup.sh)'s code quality
+
 Required:
 
 - `apt` like Debian and Ubuntu
 
 Optional:
 
-- [`fish`](https://fishshell.com), the **f**riendly **i**nteractive **sh**ell
-- [VSCode](https://code.visualstudio.com)
+- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
+- [VSCode](https://code.visualstudio.com/)
+- [Postgres](https://www.postgresql.org/)
 
 ## instructions
 
 **1**. install a browser for development
 (I like to develop with [Chromium](https://www.chromium.org/Home))
 
-**2**. install a text editor like [VSCode](https://code.visualstudio.com),
+**2**. install a text editor like [VSCode](https://code.visualstudio.com/),
 preferably one with good [Svelte support](https://github.com/sveltejs/language-tools) —
 see [the `vscode/` directory](vscode) for recommended extensions and more
 
@@ -63,13 +67,13 @@ gg # alias for `gro dev`
 ## links and resources
 
 - task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
-- Svelte: [svelte.dev](https://svelte.dev)
-- SvelteKit: [kit.svelte.dev](https://kit.svelte.dev)
-- [fish](https://fishshell.com) shell
-- [VSCode](https://code.visualstudio.com) (recommended for
+- Svelte: [svelte.dev](https://svelte.dev/)
+- SvelteKit: [kit.svelte.dev](https://kit.svelte.dev/)
+- [fish](https://fishshell.com/) shell
+- [VSCode](https://code.visualstudio.com/) (recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools))
   - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-- [Git](https://git-scm.com)
+- [Git](https://git-scm.com/)
 
 ## license 🐦
 
