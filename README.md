@@ -4,7 +4,7 @@ This repo has docs, configs, and scripts for setting up my dev environment from 
 
 It supports the following software:
 
-- [fish](https://fishshell.com/) shell
+- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 - NodeJS: [nodejs.org](https://nodejs.org/)
 - [VSCode](https://code.visualstudio.com/) — recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools)
@@ -18,17 +18,11 @@ and I'd be happy to take PRs to support other operating systems.
 > my bash skills aren't that good! I'd appreciate help improving
 > [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
 
-Required:
+## instructions
+
+Requirements:
 
 - `apt` like Debian and Ubuntu
-
-Optional:
-
-- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
-- [VSCode](https://code.visualstudio.com/)
-- [Postgres](https://www.postgresql.org/)
-
-## instructions
 
 **1**. install a browser for development
 (I like to develop with [Chromium](https://www.chromium.org/Home))
