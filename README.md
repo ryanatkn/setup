@@ -72,6 +72,11 @@ gg # alias for `gro dev`
 
 > learn more about [`@feltcoop/gro`](https://github.com/feltcoop/gro)
 
+## todo
+
+- improve the bash script so the authors look like they know what they're doing
+- consider renaming this repo from `setup` to something less generic
+
 ## license 🐦
 
 public domain ⚘ [The Unlicense](license)
