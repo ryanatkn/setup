@@ -6,7 +6,7 @@ for setting up my dev environment from scratch.
 Current limitations:
 
 - requires `apt` like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
-- on macOS support because it requires `apt` ([issue #3](https://github.com/ryanatkn/setup/issues/3))
+- no macOS support because it requires `apt` ([issue #3](https://github.com/ryanatkn/setup/issues/3))
 
 It supports the following software:
 
