@@ -54,7 +54,7 @@ bash setup.sh
 
 and follow the prompts ⚡
 
-> `setup.sh` should be idempotent;
+> `setup.sh` should be [idempotent](https://wikipedia.org/wiki/Idempotence);
 > if you notice a problem running it more than once,
 > [bug reports](https://github.com/ryanatkn/setup/issues) are appreciated
 
