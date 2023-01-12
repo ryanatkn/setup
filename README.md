@@ -43,14 +43,14 @@ Requirements:
 
 - `apt` like Debian and Ubuntu
 
-**1**. install a browser for development
+**1. install a browser** for development
 (I like to develop with [Chromium](https://www.chromium.org/Home))
 
-**2**. install a text editor like [VSCode](https://code.visualstudio.com/),
+**2. install a text editor** like [VSCode](https://code.visualstudio.com/),
 preferably one with good [Svelte support](https://github.com/sveltejs/language-tools) —
 see [the `vscode/` directory](vscode) for recommended extensions and more
 
-**3**. download
+**3. download**
 [this repo's files](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)
 and run [`setup.sh`](setup.sh):
 
@@ -67,9 +67,9 @@ and follow the prompts ⚡
 > if you notice a problem running it more than once,
 > [bug reports](https://github.com/ryanatkn/setup/issues) are appreciated
 
-**4**. log out and back in to update your shell, or reboot for good measure
+**4. log out and back in** to update your shell, or reboot for good measure
 
-**5**. go develop
+**5. go develop**
 
 ```bash
 git clone git@github.com:yourname/someproject
