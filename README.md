@@ -1,6 +1,7 @@
 # setup instructions and resources for my dev environment
 
-This repo has docs, configs, and scripts for setting up my dev environment from scratch.
+This repo has docs, configs, and [a bash script](setup.sh)
+for setting up my dev environment from scratch.
 
 It supports the following software:
 
