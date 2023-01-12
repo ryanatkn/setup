@@ -89,7 +89,7 @@ else
   sudo apt install -y unzip
   curl -fsSL "https://fnm.vercel.app/install" | bash
   export PATH="~/.local/share/fnm:$PATH"
-  eval "`fnm env`"
+  source "${FISH_CONFIG_DIR}fnm.fish"
   fnm install v18
   fnm use v18
   fnm default v18
