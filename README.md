@@ -57,7 +57,9 @@ and follow the prompts ⚡
 > if you notice a problem running it more than once,
 > [bug reports](https://github.com/ryanatkn/setup/issues) are appreciated
 
-**4**. go develop
+**4**. log out and back in to update your shell, or reboot for good measure
+
+**5**. go develop
 
 ```bash
 git clone git@github.com:yourname/someproject
