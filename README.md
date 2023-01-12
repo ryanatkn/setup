@@ -8,7 +8,10 @@ It supports the following software:
 - NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
 - [VSCode](https://code.visualstudio.com/) — recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools)
-- Svelte: [svelte.dev](https://svelte.dev/) — configured in VSCode
+- configured in VSCode:
+  - [Svelte](https://svelte.dev/)
+  - [ESLint](https://eslint.org/)
+  - [Prettier](https://prettier.io/)
 - [Postgres](https://www.postgresql.org/)
 - my task runner `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
 - [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
