@@ -6,9 +6,8 @@ for setting up my dev environment from scratch.
 It supports the following software:
 
 - NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
-- [VSCode](https://code.visualstudio.com/) — recommended for
-  [its Svelte support](https://github.com/sveltejs/language-tools)
-- configured in VSCode:
+- configured in [VSCode](https://code.visualstudio.com/) — recommended for
+  [its Svelte support](https://github.com/sveltejs/language-tools):
   - [Svelte](https://svelte.dev/)
   - [ESLint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
