@@ -82,17 +82,18 @@ fi
 # fnm
 FNM_DIR=~/.fnm
 FISH_CONFIG_DIR=~/.config/fish/conf.d/
+FISH_EXECUTABLE=~/.local/share/fnm
 if [ -d "$FNM_DIR" ]; then
   echo "fnm already exists at $FNM_DIR, skipping"
 else
   echo "installing fnm"
   sudo apt install -y unzip
   curl -fsSL "https://fnm.vercel.app/install" | bash
-  export PATH="~/.local/share/fnm:$PATH"
-  eval "`fnm env`" || true
-  if command -v fish > /dev/null 2>&1; then
-    source "${FISH_CONFIG_DIR}fnm.fish" || true
+  if [ -e "$FISH_EXECUTABLE" ]; then
+    export PATH="$FISH_EXECUTABLE:$PATH"
+    eval "`fnm env`" || true
   fi
+  source "${FISH_CONFIG_DIR}fnm.fish" || true
   fnm install v18
   fnm use v18
   fnm default v18
