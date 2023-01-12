@@ -21,7 +21,9 @@ It supports the following software:
 - [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL,
-and I'd be happy to take PRs to support other operating systems.
+and I'd be happy to take PRs to support other operating systems
+like `apt`-less Linux distros ([issue #4](https://github.com/ryanatkn/setup/issues/4))
+and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 
 > my bash skills aren't that good! I'd appreciate help improving
 > [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
