@@ -3,6 +3,11 @@
 This repo has docs, configs, and [a bash script](setup.sh)
 for setting up my dev environment from scratch.
 
+Current limitations:
+
+- requires `apt` like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
+- on macOS support because it requires `apt` ([issue #3](https://github.com/ryanatkn/setup/issues/3))
+
 It supports the following software:
 
 - NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
