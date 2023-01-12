@@ -10,7 +10,7 @@ copy() {
 REPO_DIR=$(dirname $(readlink -f "$0"));
 
 should_install_postgres="Skip"
-if [ -x "$(command -v psql)" ]; then
+if command -v psql > /dev/null 2>&1; then
   echo "Postgres is already installed, skipping"
 else
   echo "Download and install Postgres?"
@@ -24,7 +24,7 @@ else
   done
 fi
 
-if [ -x "$(command -v fish)" ]; then
+if command -v fish > /dev/null 2>&1; then
   echo "Fish is already installed, skipping"
 else
   echo "Install and use Fish shell?"
@@ -57,7 +57,7 @@ select should_update_apt in "Yes" "No"; do
 done
 
 # curl
-if [ -x "$(command -v curl)" ]; then
+if command -v curl > /dev/null 2>&1; then
   echo "curl is already installed, skipping"
 else
   sudo apt update
@@ -65,7 +65,7 @@ else
 fi
 
 # git - https://git-scm.com/
-if [ -x "$(command -v git)" ]; then
+if command -v git > /dev/null 2>&1; then
   echo "Git is already installed, skipping"
 else
   sudo add-apt-repository -y ppa:git-core/ppa
