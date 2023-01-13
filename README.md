@@ -50,8 +50,7 @@ Requirements:
 preferably one with good [Svelte support](https://github.com/sveltejs/language-tools) —
 see [the `vscode/` directory](vscode) for recommended extensions and more
 
-**3. download**
-[this repo's files](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)
+**3. download [this repo's files](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)**
 and run [`setup.sh`](setup.sh):
 
 ```bash
