@@ -104,6 +104,7 @@ else
 fi
 
 # create our conventional dev directory
+# TODO customize
 DEV_DIR=~/dev
 if [ -d "$DEV_DIR" ]; then
   echo "$DEV_DIR already exists, skipping"

@@ -72,6 +72,7 @@ and follow the prompts ⚡
 **5. go develop**
 
 ```bash
+cd ~/dev # currently hardcoded in script
 git clone git@github.com:yourname/someproject
 cd someproject
 npm i
