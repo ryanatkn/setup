@@ -5,9 +5,9 @@ for setting up my dev environment from scratch.
 
 Current limitations:
 
-- requires [`apt`](<https://wikipedia.org/wiki/APT_(software)>)
+- requires [apt](<https://wikipedia.org/wiki/APT_(software)>)
   like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
-- no macOS support because it requires `apt` ([issue #3](https://github.com/ryanatkn/setup/issues/3))
+- no macOS support because it requires apt ([issue #3](https://github.com/ryanatkn/setup/issues/3))
 
 It supports the following software:
 
@@ -21,9 +21,9 @@ It supports the following software:
 - my task runner and toolkit `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
 - [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 
-It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL,
+It's designed for distros with apt like Ubuntu for both standalone installations and WSL,
 and I'd be happy to take PRs to support other operating systems
-like `apt`-less Linux distros ([issue #4](https://github.com/ryanatkn/setup/issues/4))
+like apt-less Linux distros ([issue #4](https://github.com/ryanatkn/setup/issues/4))
 and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 
 > my bash skills aren't that good! I'd appreciate help improving
@@ -42,7 +42,7 @@ and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 
 Requirements:
 
-- [`apt`](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
+- [apt](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
 
 **1. install a browser** for development
 (I like to develop with [Chromium](https://www.chromium.org/Home))
