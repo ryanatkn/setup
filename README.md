@@ -5,7 +5,8 @@ for setting up my dev environment from scratch.
 
 Current limitations:
 
-- requires `apt` like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
+- requires [`apt`](<https://wikipedia.org/wiki/APT_(software)>)
+  like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
 - no macOS support because it requires `apt` ([issue #3](https://github.com/ryanatkn/setup/issues/3))
 
 It supports the following software:
@@ -41,7 +42,7 @@ and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 
 Requirements:
 
-- `apt` like Debian and Ubuntu
+- [`apt`](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
 
 **1. install a browser** for development
 (I like to develop with [Chromium](https://www.chromium.org/Home))
