@@ -28,12 +28,12 @@ The repo has multiple options for installation, or you can follow along my manua
 1. hit the meta/Windows key and search for "environment variables" -
    choose "Edit the system environment variables" and then click the button "Environment Variables..."
 1. under "System variables" (or "User variables" if you wish) doubleclick or
-   edit "Path" and then "New" and enter the path to the `fnm.exe` binary
-   (you can right-click the binary and click "Copy as path" and paste the string in)
+   edit "Path" and then "New" and enter the path to the
+   **directory** containing the `fnm.exe` binary
+   (I'm currently using `C:\windev\bin` to distinguish from my Linux `$HOME/dev` directory)
 1. restart your computer or find a shorter path to refreshing your PATH
 
 You should now have `fnm` available as a global in PowerShell.
-(TODO D: I'm failing to get this to work)
 
 Next we need to configure our PowerShell profile.
 Create the file `C:\Users\desk\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
