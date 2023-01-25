@@ -36,7 +36,7 @@ Its readme has multiple options for installation, or you can follow along my man
 You should now have `fnm` available as a global in PowerShell.
 
 Next we need to configure our PowerShell profile.
-Create the file `C:\Users\desk\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+Create the file `C:\Users\YOUR_USER\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 with the contents:
 
 ```powershell
