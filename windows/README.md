@@ -20,7 +20,7 @@ with the following contents: `%systemroot%\system32\bash -c /usr/bin/fish`
 ### installing Node
 
 [fnm](https://github.com/Schniz/fnm) is recommended for managing Node installs.
-The repo has multiple options for installation, or you can follow along my manual instructions:
+Its readme has multiple options for installation, or you can follow along my manual instructions:
 
 1. download [the fnm binary](https://github.com/Schniz/fnm/releases) binary
    and put it somewhere it won't get deleted
