@@ -44,5 +44,6 @@
 	"workbench.activityBar.visible": false,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"window.zoomLevel": 1,
-	"terminal.integrated.defaultProfile.linux": "fish"
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.integrated.env.linux": {"EDITOR": "code"}
 }
