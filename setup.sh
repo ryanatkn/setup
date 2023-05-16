@@ -97,7 +97,7 @@ else
   fnm use v18
   fnm default v18
   npm i -g npm
-  npm i -g @feltcoop/gro
+  npm i -g @feltjs/gro
   mkdir -p "$FISH_CONFIG_DIR"
   copy "$REPO_DIR/fish/settings.fish" "$FISH_CONFIG_DIR"
 fi
