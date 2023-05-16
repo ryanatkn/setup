@@ -1,8 +1,8 @@
 # setup and Windows
 
 Are you using Windows?
-Unfortunately `@feltcoop/gro`
-[does not yet support Windows](https://github.com/feltcoop/gro/issues/319).
+Unfortunately `@feltjs/gro`
+[does not yet support Windows](https://github.com/feltjs/gro/issues/319).
 
 [WSL](https://wikipedia.org/wiki/Windows_Subsystem_for_Linux)
 is my recommended way for Windows users to develop. I use it on one of my machines.

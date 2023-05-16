@@ -18,7 +18,7 @@ It supports the following software:
   - [ESLint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
 - [Postgres](https://www.postgresql.org/)
-- my task runner and toolkit `@feltcoop/gro`: [github.com/feltcoop/gro](https://github.com/feltcoop/gro)
+- my task runner and toolkit `@feltjs/gro`: [github.com/feltjs/gro](https://github.com/feltjs/gro)
 - [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 
 It's designed for distros with apt like Ubuntu for both standalone installations and WSL,
@@ -81,7 +81,7 @@ c . # alias for `code .`
 gg # alias for `gro dev`
 ```
 
-> learn more about [`@feltcoop/gro`](https://github.com/feltcoop/gro)
+> learn more about [`@feltjs/gro`](https://github.com/feltjs/gro)
 
 ## todo
 
