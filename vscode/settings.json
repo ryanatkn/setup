@@ -10,6 +10,7 @@
 	"editor.tabSize": 2,
 	"editor.formatOnSave": true,
 	"eslint.validate": ["javascript", "svelte"],
+	"prettier.prettierPath": "./node_modules/prettier",
 	"prettier.useTabs": true,
 	"prettier.tabWidth": 2,
 	"prettier.printWidth": 100,
