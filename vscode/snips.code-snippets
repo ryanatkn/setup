@@ -41,5 +41,15 @@
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "cm",
 		"body": ["/* $1 */"]
+	},
+	"JS TODO": {
+		"scope": "javascript,typescript,svelte,markdown",
+		"prefix": "td",
+		"body": ["// TODO $1"]
+	},
+	"JS blocking TODO": {
+		"scope": "javascript,typescript,svelte,markdown",
+		"prefix": "tb",
+		"body": ["// TODO BLOCK $1"]
 	}
 }
