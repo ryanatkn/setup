@@ -36,7 +36,6 @@ and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 - [`vscode/`](vscode) — config files for VSCode (copied over unless they exist)
 - [`keyrate/`](keyrate) — speedy keyboard repeat rates
 - [`windows/`](windows) — extra steps and notes for Windows users
-- [`postgres/`](postgres) — extra steps for Windows WSL users
 
 ## instructions
 
