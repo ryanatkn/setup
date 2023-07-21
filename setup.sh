@@ -78,6 +78,12 @@ if [ "$should_install_fish" = "Yes" ]; then
   should_change_shell="Yes"
 fi
 
+if [ "$should_change_shell" = "Yes" ]; then
+  echo "changing shell to fish"
+  chsh -s $(which fish)
+  echo "changed shell to fish"
+fi
+
 # fnm
 FNM_DIR=~/.fnm
 FISH_CONFIG_DIR=~/.config/fish/conf.d/
@@ -159,10 +165,6 @@ echo "~~~~setup complete!"
 echo "for more setup info see https://github.com/ryanatkn/setup"
 
 if [ "$should_change_shell" = "Yes" ]; then
-  echo "changing shell to fish"
-  chsh -s $(which fish)
-  echo "changed shell to fish"
-
   # Oh My Fish -- https://github.com/oh-my-fish/oh-my-fish
   # This goes last because it changes to fish and ends the script, dunno how to fix.
   OMF_DIR=~/.config/omf
