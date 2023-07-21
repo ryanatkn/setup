@@ -75,13 +75,21 @@ fi
 # Fish Shell -- https://fishshell.com/
 if [ "$should_install_fish" = "Yes" ]; then
   sudo apt install -y fish
-  should_change_shell="Yes"
-fi
 
-if [ "$should_change_shell" = "Yes" ]; then
   echo "changing shell to fish"
   chsh -s $(which fish)
   echo "changed shell to fish"
+
+  # Oh My Fish -- https://github.com/oh-my-fish/oh-my-fish
+  # This goes last because it changes to fish and ends the script, dunno how to fix.
+  OMF_DIR=~/.config/omf
+  if [ -d "$OMF_DIR" ]; then
+    echo "Oh My Fish already exists at $OMF_DIR, skipping"
+  else
+    curl "https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install" | fish
+  fi
+
+  # TODO install theme/plugins?
 fi
 
 # fnm
@@ -163,18 +171,5 @@ fi
 
 echo "~~~~setup complete!"
 echo "for more setup info see https://github.com/ryanatkn/setup"
-
-if [ "$should_change_shell" = "Yes" ]; then
-  # Oh My Fish -- https://github.com/oh-my-fish/oh-my-fish
-  # This goes last because it changes to fish and ends the script, dunno how to fix.
-  OMF_DIR=~/.config/omf
-  if [ -d "$OMF_DIR" ]; then
-    echo "Oh My Fish already exists at $OMF_DIR, skipping"
-  else
-    curl "https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install" | fish
-  fi
-
-  # TODO install theme/plugins?
-fi
 
 echo "boop"

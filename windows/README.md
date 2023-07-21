@@ -8,9 +8,9 @@ Unfortunately `@feltjs/gro`
 is my recommended way for Windows users to develop. I use it on one of my machines.
 
 - Windows instructions for VSCode: [/vscode](/vscode)
-- Windows instructions for Postgres: [/postgres](/postgres)
 
-See the [WSL installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).
+Here's the
+[official WSL installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).
 What I had to do:
 
 - in Powershell, type `wsl --install`
