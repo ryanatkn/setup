@@ -54,9 +54,8 @@ see [the `vscode/` directory](vscode) for recommended extensions and docs/config
 and run [`setup.sh`](setup.sh):
 
 ```bash
-wget https://github.com/ryanatkn/setup/archive/refs/heads/main.zip
-unzip main.zip
-cd setup-main
+git clone https://github.com/ryanatkn/setup
+cd setup
 bash setup.sh
 ```
 
