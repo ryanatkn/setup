@@ -45,11 +45,10 @@ Requirements:
 - [apt](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
 
 **1. install a browser** for development
-(I like to develop with [Chromium](https://www.chromium.org/Home))
 
-**2. install a text editor** like [VSCode](https://code.visualstudio.com/),
-preferably one with good [Svelte support](https://github.com/sveltejs/language-tools) —
-see [the `vscode/` directory](vscode) for recommended extensions and more
+**2. install a text editor** (with good [Svelte support](https://github.com/sveltejs/language-tools) if you need it)
+like [VSCode](https://code.visualstudio.com/) —
+see [the `vscode/` directory](vscode) for recommended extensions and docs/config
 
 **3. download [this repo's files 📁](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)**
 and run [`setup.sh`](setup.sh):

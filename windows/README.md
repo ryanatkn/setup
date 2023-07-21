@@ -6,16 +6,22 @@ Unfortunately `@feltjs/gro`
 
 [WSL](https://wikipedia.org/wiki/Windows_Subsystem_for_Linux)
 is my recommended way for Windows users to develop. I use it on one of my machines.
-(TODO video walkthrough)
 
 - Windows instructions for VSCode: [/vscode](/vscode)
 - Windows instructions for Postgres: [/postgres](/postgres)
 
-WSL starts with Bash by default, so `chsh` doesn't work as expected.
-To start with Fish, create a new shortcut (rightclick the desktop -> New -> Shortcut)
-with the following contents: `%systemroot%\system32\bash -c /usr/bin/fish`
+See the [WSL installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).
+What I had to do:
 
-## new instructions! this is a work in progress for full Windows 11 support
+- in Powershell, type `wsl --install`
+- open main windows menu, type "windows features", choose "Turn Windows features on or off"
+- check "Windows Hypervisor Platform" and "Windows Subsystem for Linux"
+- reboot
+- if it doesn't automatically open a prompt to create an Ubuntu user,
+  go to Powershell and type `wsl`
+- some things in the script didn't set up correctly, like `fnm`, shrug
+
+## not ready - work in progress for Windows 11 support
 
 ### installing Node
 
