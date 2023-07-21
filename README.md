@@ -44,7 +44,7 @@ Requirements:
 
 - [apt](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
 
-**1. install a browser** for development
+**1. install a browser and git** for development
 
 **2. install a text editor** (with good [Svelte support](https://github.com/sveltejs/language-tools) if you need it)
 like [VSCode](https://code.visualstudio.com/) —
