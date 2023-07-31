@@ -1,12 +1,20 @@
 {
 	"window.titleBarStyle": "custom",
+	"window.zoomLevel": 1,
 	"telemetry.telemetryLevel": "off",
+	"workbench.activityBar.visible": false,
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#1A1A1A",
 		"statusBar.noFolderBackground": "#212121",
 		"statusBar.debuggingBackground": "#263238"
 	},
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.integrated.env.linux": {"EDITOR": "code"},
+	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.tabSize": 2,
 	"editor.formatOnSave": true,
 	"eslint.validate": ["javascript", "svelte"],
@@ -39,12 +47,4 @@
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"svelte.enable-ts-plugin": true,
-	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
-	"workbench.activityBar.visible": false,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"window.zoomLevel": 1,
-	"terminal.integrated.defaultProfile.linux": "fish",
-	"terminal.integrated.env.linux": {"EDITOR": "code"}
 }
