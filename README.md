@@ -15,10 +15,7 @@ It supports the following software:
 - my task runner and toolkit `@feltjs/gro`: [github.com/feltjs/gro](https://github.com/feltjs/gro)
 - [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
 
-It's designed for distros with apt like Ubuntu for both standalone installations and WSL,
-and I'd be happy to take PRs to support other operating systems
-like apt-less Linux distros ([issue #4](https://github.com/ryanatkn/setup/issues/4))
-and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
+It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
 > my bash skills aren't that good! I'd appreciate help improving
 > [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
