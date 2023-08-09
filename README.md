@@ -1,18 +1,12 @@
 # setup instructions and resources for my dev environment
 
 This repo has docs, configs, and [a bash script](setup.sh)
-for setting up my dev environment from scratch.
-
-Current limitations:
-
-- requires [apt](<https://wikipedia.org/wiki/APT_(software)>)
-  like Debian and Ubuntu ([issue #4](https://github.com/ryanatkn/setup/issues/4))
-- no macOS support because it requires apt ([issue #3](https://github.com/ryanatkn/setup/issues/3))
+for setting up my Ubuntu/Debian dev environment.
 
 It supports the following software:
 
 - NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
-- configured in [VSCode](https://code.visualstudio.com/) — recommended for
+- [VSCode](https://code.visualstudio.com/) — recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools):
   - [Svelte](https://svelte.dev/)
   - [ESLint](https://eslint.org/)
@@ -33,7 +27,8 @@ and macOS ([issue #3](https://github.com/ryanatkn/setup/issues/3)).
 
 - [instructions](#instructions) (see below)
 - [`fish/`](fish) — config files that get copied over for fish initialization
-- [`vscode/`](vscode) — config files for VSCode (copied over unless they exist)
+- [`vscode/`](vscode) — settings, snippets, and keybindings for VSCode
+  (copied over by the script unless they exist or the paths aren't right)
 - [`keyrate/`](keyrate) — speedy keyboard repeat rates
 - [`windows/`](windows) — extra steps and notes for Windows users
 
@@ -83,7 +78,8 @@ gg # alias for `gro dev`
 ## todo
 
 - improve the bash script so the authors look like they know what they're doing
-- consider renaming this repo from `setup` to something less generic
+- consider renaming this repo from `setup` to something less generic,
+  maybe I should give in to `dotfiles`
 
 ## license 🐦
 
