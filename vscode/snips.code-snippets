@@ -23,9 +23,9 @@
 	},
 	"Print to console as object": {
 		"scope": "javascript,typescript,svelte,markdown",
-		"prefix": "log",
-		"body": ["console.log({'$1': $1});"],
-		"description": "Log to console as object"
+		"prefix": "lgo",
+		"body": ["console.log({$1});"],
+		"description": "Log to console as labelled object"
 	},
 	"Svelte derived store": {
 		"scope": "javascript,typescript,svelte,markdown",
