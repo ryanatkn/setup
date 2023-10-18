@@ -1,6 +1,6 @@
 # setup instructions and resources for my dev environment
 
-This repo has docs, configs, and [a bash script](setup.sh)
+This repo has docs, configs, and [a bash script](/setup.sh)
 for setting up my Ubuntu/Debian dev environment.
 
 It supports the following software:
@@ -18,7 +18,7 @@ It supports the following software:
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
 > my bash skills aren't that good! I'd appreciate help improving
-> [the script](setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
+> [the script](/setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
 
 ## docs
 
@@ -42,7 +42,7 @@ like [VSCode](https://code.visualstudio.com/) —
 see [the `vscode/` directory](vscode) for recommended extensions and docs/config
 
 **3. download [this repo's files 📁](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)**
-and run [`setup.sh`](setup.sh):
+and run [`setup.sh`](/setup.sh):
 
 ```bash
 git clone https://github.com/ryanatkn/setup
