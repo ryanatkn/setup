@@ -17,9 +17,6 @@ It supports the following software:
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
-> my bash skills aren't that good! I'd appreciate help improving
-> [the script](/setup.sh)'s code quality. I think some of it is more verbose than it needs to be.
-
 ## docs
 
 - [instructions](#instructions) (see below)
