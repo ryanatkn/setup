@@ -17,6 +17,8 @@ It supports the following software:
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
+> my bash skills aren't that good! help is appreciated
+
 ## docs
 
 - [instructions](#instructions) (see below)
