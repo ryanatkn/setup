@@ -47,4 +47,5 @@
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"workbench.editor.labelFormat": "short"
 }
