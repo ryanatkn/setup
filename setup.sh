@@ -107,9 +107,9 @@ else
     eval "`fnm env`" || true
   fi
   source "${FISH_CONFIG_DIR}fnm.fish" || true
-  fnm install v18
-  fnm use v18
-  fnm default v18
+  fnm install v20
+  fnm use v20
+  fnm default v20
   npm i -g npm
   npm i -g @feltjs/gro
   mkdir -p "$FISH_CONFIG_DIR"
