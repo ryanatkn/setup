@@ -111,7 +111,7 @@ else
   fnm use v20
   fnm default v20
   npm i -g npm
-  npm i -g @feltjs/gro
+  npm i -g @grogarden/gro
   mkdir -p "$FISH_CONFIG_DIR"
   copy "$REPO_DIR/fish/settings.fish" "$FISH_CONFIG_DIR"
 fi

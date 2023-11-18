@@ -5,15 +5,15 @@ for setting up my Ubuntu/Debian dev environment.
 
 It supports the following software:
 
-- NodeJS: [nodejs.org](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
+- [NodeJS](https://nodejs.org/) via [fnm](https://github.com/Schniz/fnm)
+- [fish](https://fishshell.com/) shell
+- [Postgres](https://www.postgresql.org/)
 - [VSCode](https://code.visualstudio.com/) — recommended for
   [its Svelte support](https://github.com/sveltejs/language-tools):
   - [Svelte](https://svelte.dev/)
   - [ESLint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
-- [Postgres](https://www.postgresql.org/)
-- my task runner and toolkit `@feltjs/gro`: [github.com/feltjs/gro](https://github.com/feltjs/gro)
-- [fish](https://fishshell.com/), the **f**riendly **i**nteractive **sh**ell
+- my task runner and toolkit `@grogarden/gro`: [github.com/grogarden/gro](https://github.com/grogarden/gro)
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
@@ -69,7 +69,7 @@ c . # alias for `code .`
 gg # alias for `gro dev`
 ```
 
-> learn more about [`@feltjs/gro`](https://github.com/feltjs/gro)
+> learn more about [`@grogarden/gro`](https://github.com/grogarden/gro)
 
 ## todo
 
