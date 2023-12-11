@@ -137,6 +137,7 @@ if [ "$should_configure_git" = "Yes" ]; then
   git config --global user.email "$git_user_email"
   # workflow options
   git config --global pull.rebase true # avoids tangling with merge commits
+  git config --global fetch.prune true # deletes nonexistent remote branches on pull
   git config --global push.default simple # avoids polluting remote with local branches
   # some other nice options
   git config --global color.ui auto
