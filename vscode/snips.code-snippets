@@ -51,5 +51,10 @@
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "tb",
 		"body": ["// TODO BLOCK $1"]
+	},
+	"TS blocking TODO": {
+		"scope": "javascript,typescript,svelte,markdown",
+		"prefix": "tsb",
+		"body": ["const TODO: 1 = '$1'"]
 	}
 }
