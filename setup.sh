@@ -143,6 +143,7 @@ if [ "$should_configure_git" = "Yes" ]; then
   git config --global color.ui auto
   git config --global core.pager 'less -x1,5'
   git config --global init.defaultBranch main
+  git config --global merge.conflictstyle zdiff3 # https://jvns.ca/blog/2024/02/16/popular-git-config-options/
   echo "successfully configured Git"
 elif [ "$should_configure_git" = "No" ]; then
   echo "chose not to configure Git, skipping"
