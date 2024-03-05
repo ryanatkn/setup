@@ -18,43 +18,82 @@
 	"Print to console with label": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "lg",
-		"body": ["console.log(`$1`, $1);"],
+		"body": [
+			"console.log(`$1`, $1);"
+		],
 		"description": "Log to console with label"
 	},
 	"Print to console as object": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "lgo",
-		"body": ["console.log({$1});"],
+		"body": [
+			"console.log({$1});"
+		],
 		"description": "Log to console as labelled object"
+	},
+	"Svelte $inspect with label": {
+		"scope": "javascript,typescript,svelte,markdown",
+		"prefix": "ins",
+		"body": [
+			"$inspect(`$1`, $1);"
+		],
+		"description": "$inspect with label"
+	},
+	"Svelte $inspect as object": {
+		"scope": "javascript,typescript,svelte,markdown",
+		"prefix": "inso",
+		"body": [
+			"$inspect({$1});"
+		],
+		"description": "$inspect as labelled object"
 	},
 	"Svelte derived store": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "dr",
-		"body": ["derived(\n\t[$1],\n\t([$$1]) => \n);"]
+		"body": [
+			"derived(\n\t[$1],\n\t([$$1]) => \n);"
+		]
 	},
 	"JS import": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "im",
-		"body": ["import {$2} from '$1';"]
+		"body": [
+			"import {$2} from '$1';"
+		]
 	},
 	"JS multiline comment": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "cm",
-		"body": ["/* $1 */"]
+		"body": [
+			"/* $1 */"
+		]
 	},
 	"JS TODO": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "td",
-		"body": ["// TODO $1"]
+		"body": [
+			"// TODO $1"
+		]
 	},
 	"JS blocking TODO": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "tb",
-		"body": ["// TODO BLOCK $1"]
+		"body": [
+			"// TODO BLOCK $1"
+		]
 	},
-	"TS blocking TODO": {
+	"Svelte snippet": {
+		"scope": "svelte,markdown",
+		"prefix": "snip",
+		"body": [
+			"{#snippet $1}$2{/snippet}"
+		]
+	},
+	"Svelte vocab": {
 		"scope": "javascript,typescript,svelte,markdown",
-		"prefix": "tsb",
-		"body": ["const TODO: 1 = '$1'"]
+		"prefix": "vc",
+		"body": [
+			"<Vocab name=\"$1\" />$2"
+		]
 	}
 }
