@@ -13,7 +13,7 @@ It supports the following software:
   - [Svelte](https://svelte.dev/)
   - [ESLint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
-- my task runner and toolkit `@grogarden/gro`: [github.com/grogarden/gro](https://github.com/grogarden/gro)
+- my task runner and toolkit `@ryanatkn/gro`: [github.com/ryanatkn/gro](https://github.com/ryanatkn/gro)
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
@@ -69,7 +69,7 @@ c . # alias for `code .`
 gg # alias for `gro dev`
 ```
 
-> learn more about [`@grogarden/gro`](https://github.com/grogarden/gro)
+> learn more about [`@ryanatkn/gro`](https://github.com/ryanatkn/gro)
 
 ## todo
 

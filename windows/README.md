@@ -1,8 +1,7 @@
 # setup and Windows
 
 Are you using Windows?
-Unfortunately `@grogarden/gro`
-[does not yet support Windows](https://github.com/grogarden/gro/issues/319).
+Unfortunately `@ryanatkn/gro` will not support Windows because I chose Bash instead.
 
 [WSL](https://wikipedia.org/wiki/Windows_Subsystem_for_Linux)
 is my recommended way for Windows users to develop. I use it on one of my machines.
