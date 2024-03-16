@@ -76,10 +76,6 @@ fi
 if [ "$should_install_fish" = "Yes" ]; then
   sudo apt install -y fish
 
-  echo "changing shell to fish"
-  chsh -s $(which fish)
-  echo "changed shell to fish"
-
   # Oh My Fish -- https://github.com/oh-my-fish/oh-my-fish
   # This goes last because it changes to fish and ends the script, dunno how to fix.
   OMF_DIR=~/.config/omf
@@ -169,6 +165,12 @@ elif [ "$should_install_postgres" = "No" ]; then
   echo "skipping Postgres installation"
 else
   echo "Postgres is already installed, skipping"
+fi
+
+if [ "$should_install_fish" = "Yes" ]; then
+  echo "changing shell to fish"
+  chsh -s $(which fish)
+  echo "changed shell to fish"
 fi
 
 echo "~~~~setup complete!"
