@@ -28,5 +28,6 @@ alias nt="npm test"
 alias gg="gro dev"
 alias pg="sudo -u postgres"
 
+export GIT_MERGE_AUTOEDIT=no
 export VISUAL=code
 export EDITOR="$VISUAL"
