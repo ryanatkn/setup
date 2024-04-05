@@ -48,6 +48,7 @@
 	"workbench.editor.labelFormat": "short",
 	"workbench.tree.indent": 14,
 	"workbench.editor.customLabels.patterns": {
-		"**/+*": "${dirname}/${filename}.${extname}"
+		"**/+*": "${dirname}/${filename}.${extname}",
+		"**/index.*": "${dirname}/${filename}.${extname}"
 	}
 }
