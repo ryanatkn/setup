@@ -46,5 +46,8 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"workbench.editor.labelFormat": "short",
-	"workbench.tree.indent": 14
+	"workbench.tree.indent": 14,
+	"workbench.editor.customLabels.patterns": {
+		"**/+*": "${dirname}/${filename}.${extname}"
+	}
 }
