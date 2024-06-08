@@ -50,5 +50,6 @@
 	"workbench.editor.customLabels.patterns": {
 		"**/+*": "${dirname}/${filename}.${extname}",
 		"**/index.*": "${dirname}/${filename}.${extname}"
-	}
+	},
+	"window.commandCenter": false
 }
