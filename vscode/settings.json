@@ -2,7 +2,7 @@
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 1,
 	"telemetry.telemetryLevel": "off",
-	"workbench.activityBar.visible": false,
+	"workbench.activityBar.location": "hidden",
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#1A1A1A",
 		"statusBar.noFolderBackground": "#212121",
