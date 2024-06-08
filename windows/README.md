@@ -1,4 +1,4 @@
-# setup and Windows
+# Setup and Windows
 
 Are you using Windows?
 Unfortunately `@ryanatkn/gro` will not support Windows because I chose Bash instead.
@@ -18,11 +18,16 @@ What I had to do:
 - reboot
 - if it doesn't automatically open a prompt to create an Ubuntu user,
   go to Powershell and type `wsl`
-- some things in the script didn't set up correctly, like `fnm`, shrug
+
+## My preferred options
+
+- Open a folder, click `...` in the title bar, click options, click the `view` tab,
+  select `Show hidden files, folders, and drives`, and uncheck `Hide extensions for known file types`,
+  then click `OK` or `Apply`.
 
 ## not ready - work in progress for Windows 11 support
 
-### installing Node
+### Installing Node
 
 [fnm](https://github.com/Schniz/fnm) is recommended for managing Node installs.
 Its readme has multiple options for installation, or you can follow along my manual instructions:
