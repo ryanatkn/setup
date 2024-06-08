@@ -8,6 +8,13 @@
 		"statusBar.noFolderBackground": "#212121",
 		"statusBar.debuggingBackground": "#263238"
 	},
+	"workbench.editor.labelFormat": "short",
+	"workbench.tree.indent": 14,
+	"workbench.editor.customLabels.patterns": {
+		"**/+*": "${dirname}/${filename}.${extname}",
+		"**/index.*": "${dirname}/${filename}.${extname}"
+	},
+	"window.commandCenter": false,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"svelte.enable-ts-plugin": true,
@@ -44,12 +51,5 @@
 	},
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"workbench.editor.labelFormat": "short",
-	"workbench.tree.indent": 14,
-	"workbench.editor.customLabels.patterns": {
-		"**/+*": "${dirname}/${filename}.${extname}",
-		"**/index.*": "${dirname}/${filename}.${extname}"
-	},
-	"window.commandCenter": false
+	}
 }
