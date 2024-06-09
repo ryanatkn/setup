@@ -1,4 +1,4 @@
-# setup instructions and resources for my dev environment
+# Setup instructions and resources for my dev environment
 
 This repo has docs, configs, and [a bash script](/setup.sh)
 for setting up my Ubuntu/Debian dev environment.
@@ -17,9 +17,9 @@ It supports the following software:
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
-> my bash skills aren't that good! help is appreciated
+> ⚠️ This seems to be failing badly on WSL now, idk what's wrong.
 
-## docs
+## Docs
 
 - [instructions](#instructions) (see below)
 - [`fish/`](fish) — config files that get copied over for fish initialization
@@ -28,19 +28,19 @@ It's designed for distros with `apt` like Ubuntu for both standalone installatio
 - [`keyrate/`](keyrate) — speedy keyboard repeat rates
 - [`windows/`](windows) — extra steps and notes for Windows users
 
-## instructions
+## Instructions
 
 Requirements:
 
 - [apt](<https://wikipedia.org/wiki/APT_(software)>) like Debian and Ubuntu
 
-**1. install a browser and git** for development
+**1. Install a browser and git** for development
 
-**2. install a text editor** (with good [Svelte support](https://github.com/sveltejs/language-tools) if you need it)
+**2. Install a text editor** (with good [Svelte support](https://github.com/sveltejs/language-tools) if you need it)
 like [VSCode](https://code.visualstudio.com/) —
 see [the `vscode/` directory](vscode) for recommended extensions and docs/config
 
-**3. download [this repo's files 📁](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)**
+**3. Download [this repo's files 📁](https://github.com/ryanatkn/setup/archive/refs/heads/main.zip)**
 and run [`setup.sh`](/setup.sh):
 
 ```bash
@@ -55,9 +55,9 @@ and follow the prompts ⚡
 > if you notice a problem running it more than once,
 > [bug reports](https://github.com/ryanatkn/setup/issues) are appreciated
 
-**4. log out and back in** to update your shell, or reboot for good measure
+**4. Log out and back in** to update your shell, or reboot for good measure
 
-**5. go develop**
+**5. Go develop**
 
 ```bash
 ssh-keygen # follow prompts and add `~/.ssh/id_rsa.pub` to GitHub via settings -> SSH and GPG keys
@@ -72,12 +72,12 @@ gg # alias for `gro dev`
 
 > learn more about [`@ryanatkn/gro`](https://github.com/ryanatkn/gro)
 
-## todo
+## Todo
 
 - improve the bash script so the authors look like they know what they're doing
 - consider renaming this repo from `setup` to something less generic,
   maybe I should give in to `dotfiles`
 
-## license 🐦
+## License 🐦
 
 public domain ⚘ [The Unlicense](license)
