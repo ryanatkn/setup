@@ -1,4 +1,4 @@
-# Setup instructions and resources for my dev environment
+# Setup docs and configs for my dev environment
 
 This repo has docs, configs, and [a bash script](/setup.sh)
 for setting up my Ubuntu/Debian dev environment.
