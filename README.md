@@ -60,6 +60,7 @@ and follow the prompts ⚡
 **5. go develop**
 
 ```bash
+ssh-keygen # follow prompts and add `~/.ssh/id_rsa.pub` to GitHub via settings -> SSH and GPG keys
 cd ~/dev # currently hardcoded in script
 git clone git@github.com:yourname/someproject
 cd someproject
