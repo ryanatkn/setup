@@ -24,3 +24,20 @@ What I had to do:
 - Open a folder, click `...` in the title bar, click options, click the `view` tab,
   select `Show hidden files, folders, and drives`, and uncheck `Hide extensions for known file types`,
   then click `OK` or `Apply`.
+
+## Fix to open VSCode from an instance of VSCode
+
+Sometimes I'm unable to open a new instance of VSCode from inside a VSCode terminal.
+The error looks like this:
+
+```
+Unable to connect to VS Code server: Error in request.
+Error: connect ENOENT /run/user/1000/vscode-ipc-[...].sock
+[more stuff]
+```
+
+From [this VSCode issue](https://github.com/microsoft/vscode/issues/157275):
+
+```bash
+loginctl enable-linger $(whoami)
+```
