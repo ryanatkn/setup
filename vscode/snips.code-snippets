@@ -47,13 +47,6 @@
 		],
 		"description": "$inspect as labelled object"
 	},
-	"Svelte derived store": {
-		"scope": "javascript,typescript,svelte,markdown",
-		"prefix": "dr",
-		"body": [
-			"derived(\n\t[$1],\n\t([$$1]) => \n);"
-		]
-	},
 	"JS import": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "im",
@@ -89,6 +82,7 @@
 			"{#snippet $1}$2{/snippet}"
 		]
 	},
+	// TODO maybe add JS variants and prefix these with `s`?
 	"Svelte if": {
 		"scope": "svelte,markdown",
 		"prefix": "if",
@@ -110,4 +104,11 @@
 			"{@render $1()}$2"
 		]
 	},
+	"Svelte button": {
+		"scope": "svelte,markdown",
+		"prefix": "btn",
+		"body": [
+			"<button type=\"button\"$2>$1</button>$3"
+		]
+	}
 }
