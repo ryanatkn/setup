@@ -35,7 +35,7 @@
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "ins",
 		"body": [
-			"$inspect(`$1`, $1);"
+			"\\$inspect(`$1`, $1);"
 		],
 		"description": "$inspect with label"
 	},
@@ -43,7 +43,7 @@
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "inso",
 		"body": [
-			"$inspect({$1});"
+			"\\$inspect({$1});"
 		],
 		"description": "$inspect as labelled object"
 	},
@@ -82,7 +82,6 @@
 			"{#snippet $1}$2{/snippet}"
 		]
 	},
-	// TODO maybe add JS variants and prefix these with `s`?
 	"Svelte if": {
 		"scope": "svelte,markdown",
 		"prefix": "if",
