@@ -15,6 +15,7 @@
 		"**/index.*": "${dirname}/${filename}.${extname}"
 	},
 	"window.commandCenter": false,
+	"scm.showHistoryGraph": false,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"svelte.enable-ts-plugin": true,
