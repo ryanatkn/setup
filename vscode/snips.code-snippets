@@ -47,6 +47,20 @@
 		],
 		"description": "$inspect as labelled object"
 	},
+	"Svelte new component without children": {
+		"scope": "svelte,markdown",
+		"prefix": "nc",
+		"body": [
+			"<script lang=\"ts\">\n	// interface Props {\n	// }\n\n	// const {}: Props = \\$props();\n</script>\n\n$1"
+		]
+	},
+	"Svelte new component with children": {
+		"scope": "svelte,markdown",
+		"prefix": "ncc",
+		"body": [
+			"<script lang=\"ts\">\n	import type {Snippet} from 'svelte';\n\n	interface Props {\n		children: Snippet;\n	}\n\n	const {children}: Props = \\$props();\n</script>\n\n$1\n{@render children()}"
+		]
+	},
 	"JS import": {
 		"scope": "javascript,typescript,svelte,markdown",
 		"prefix": "im",
