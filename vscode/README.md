@@ -9,6 +9,7 @@ YMMV with other editors.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+
 ## VSCode with Windows and WSL
 
 When using WSL and Windows, you may want to run VSCode in your Windows host instead of in Linux.
@@ -25,6 +26,19 @@ You can manually copy the config files:
 
 > TODO automated solution for configuring VSCode in Windows?
 
-## resources
+
+## Svelte snippets
+
+- `nc` - new Svelte component
+- `ncc` - new Svelte component with children
+- `snip` - new Svelte snippet
+- `if` - Svelte if block
+- `else` - Svelte if/else block
+- `render` - Svelte render block
+- `btn` - HTML button
+
+> TODO improve these docs
+
+## Resources
 
 - [VSCode keyboard shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
