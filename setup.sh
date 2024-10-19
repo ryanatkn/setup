@@ -87,8 +87,10 @@ if [ ! -d "$FNM_DIR" ]; then
   echo 'fnm env --use-on-cd | source' > "$FISH_CONFIG_DIR/fnm.fish"
   
   # install Node.js and global packages
-  export PATH="$HOME/.fnm:$PATH"
-  eval "$(fnm env)"
+  source ~/.bashrc
+  # TODO this seemed to stop working, sourcing above instead
+  #export PATH="$HOME/.fnm:$PATH"
+  #eval "$(fnm env)"
   fnm install v20
   fnm use v20
   fnm default v20
