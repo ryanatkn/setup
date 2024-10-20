@@ -7,7 +7,7 @@ copy() {
   cp -nv "$1" "$2"
 }
 
-REPO_DIR=$(dirname $(readlink -f "$0"))
+REPO_DIR=$(dirname "$(readlink -f "$0")")
 
 # Function to prompt user for yes/no questions
 prompt_yes_no() {
@@ -23,30 +23,6 @@ prompt_yes_no() {
   done
 }
 
-# Check for Postgres
-if command -v psql > /dev/null 2>&1; then
-  echo "Postgres is already installed, skipping"
-  should_install_postgres="Skip"
-else
-  if prompt_yes_no "Download and install Postgres?"; then
-    should_install_postgres="Yes"
-  else
-    should_install_postgres="No"
-  fi
-fi
-
-# Check for Fish
-if command -v fish > /dev/null 2>&1; then
-  echo "Fish is already installed, skipping"
-  should_install_fish="No"
-else
-  if prompt_yes_no "Install and use Fish shell?"; then
-    should_install_fish="Yes"
-  else
-    should_install_fish="No"
-  fi
-fi
-
 # Configure Git
 if prompt_yes_no "Configure Git?"; then
     should_configure_git="Yes"
@@ -55,46 +31,63 @@ else
 fi
 
 # Update and upgrade apt
-if prompt_yes_no "Update and upgrade apt?"; then
-  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
-fi
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
 # Install curl if not present
 if ! command -v curl > /dev/null 2>&1; then
-  sudo apt update && sudo apt install -y curl
+  sudo apt install -y curl
 fi
 
 # git - https://git-scm.com/
 if ! command -v git > /dev/null 2>&1; then
-  sudo apt update && sudo apt install -y git
+  sudo apt install -y git
 fi
 
 # Fish Shell -- https://fishshell.com/
-if [ "$should_install_fish" = "Yes" ]; then
+FISH_CONFIG_DIR=~/.config/fish/conf.d
+mkdir -p "$FISH_CONFIG_DIR"
+if ! command -v fish > /dev/null 2>&1; then
   sudo apt install -y fish
+  installed_fish="Yes"
+else
+  installed_fish="No"
 fi
 
 # fnm
-FNM_DIR=~/.fnm
-FISH_CONFIG_DIR=~/.config/fish/conf.d/
-if [ ! -d "$FNM_DIR" ]; then
+if [ -d "$HOME/.fnm" ]; then
+  FNM_INSTALL_DIR="$HOME/.fnm"
+elif [ -n "$XDG_DATA_HOME" ]; then
+  FNM_INSTALL_DIR="$XDG_DATA_HOME/fnm"
+elif [ "$OS" = "Darwin" ]; then
+  FNM_INSTALL_DIR="$HOME/Library/Application Support/fnm"
+else
+  FNM_INSTALL_DIR="$HOME/.local/share/fnm"
+fi
+if [ ! -d "$FNM_INSTALL_DIR" ]; then
   echo "Installing fnm"
   sudo apt install -y unzip
   curl -fsSL https://fnm.vercel.app/install | bash
-  
-  # set up fnm in Fish config
-  mkdir -p "$FISH_CONFIG_DIR"
-  echo 'fnm env --use-on-cd | source' > "$FISH_CONFIG_DIR/fnm.fish"
+
+  # set up fnm in Fish config manually, since it will autodetect Bash
+  echo "Appending to $FNM_INSTALL_DIR:"
+   {
+      echo ''
+      echo '# fnm'
+      echo 'set FNM_PATH "'"$FNM_INSTALL_DIR"'"'
+      echo 'if [ -d "$FNM_PATH" ]'
+      echo '  set PATH "$FNM_PATH" $PATH'
+      echo '  fnm env --use-on-cd | source'
+      echo 'end'
+    } | tee -a "$FISH_CONFIG_DIR/fnm.fish"
   
   # install Node.js and global packages
-  source ~/.bashrc
-  # TODO this seemed to stop working, sourcing above instead
-  #export PATH="$HOME/.fnm:$PATH"
-  #eval "$(fnm env)"
+  export PATH="$FNM_INSTALL_DIR:$PATH"
+  eval "$(fnm env)"
   fnm install v20
   fnm use v20
   fnm default v20
   npm i -g npm @ryanatkn/gro @changesets/cli
+  echo "Installed fnm, node, and gro"
 fi
 
 # create our conventional dev directory
@@ -103,6 +96,7 @@ mkdir -p "$DEV_DIR"
 
 # configure Git
 if [ "$should_configure_git" = "Yes" ]; then
+  echo "Configuring Git"
   echo "existing Git user: $(git config --global user.name)"
   read -p "Enter new Git user.name: " git_user_name
   echo "existing Git email: $(git config --global user.email)"
@@ -118,7 +112,7 @@ if [ "$should_configure_git" = "Yes" ]; then
   git config --global core.pager 'less -x1,5'
   git config --global init.defaultBranch main
   git config --global merge.conflictstyle diff3
-  echo "successfully configured Git"
+  echo "Successfully configured Git"
 fi
 
 # Copy VSCode configs
@@ -129,20 +123,22 @@ copy "$REPO_VSCODE_DIR/keybindings.json" "$VSCODE_USER_DIR/"
 copy "$REPO_VSCODE_DIR/snips.code-snippets" "$VSCODE_USER_DIR/snippets/"
 
 # Install PostgreSQL
-if [ "$should_install_postgres" = "Yes" ]; then
-  sudo apt install curl ca-certificates
+
+if ! command -v psql > /dev/null 2>&1; then
+  echo "Installing Postgres"
+  sudo apt install -y ca-certificates
   sudo install -d /usr/share/postgresql-common/pgdg
   sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
   sudo sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
   sudo apt update
   sudo apt -y install postgresql
-  mkdir -p "$FISH_CONFIG_DIR"
-  copy "$REPO_DIR/fish/postgres.fish" "$FISH_CONFIG_DIR"
+  copy "$REPO_DIR/fish/postgres.fish" "$FISH_CONFIG_DIR/"
+  echo "Installed Postgres"
 fi
 
 # Change shell to Fish
-if [ "$should_install_fish" = "Yes" ]; then
-  if chsh -s $(which fish); then
+if [ "$installed_fish" = "Yes" ]; then
+  if chsh -s "$(which fish)"; then
     echo "Changed shell to Fish. Please log out and log back in for the change to take effect."
   else
     echo "Failed to change shell to Fish. You can do this manually by running: chsh -s $(which fish)"
