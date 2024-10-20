@@ -58,8 +58,6 @@ if [ -d "$HOME/.fnm" ]; then
   FNM_INSTALL_DIR="$HOME/.fnm"
 elif [ -n "$XDG_DATA_HOME" ]; then
   FNM_INSTALL_DIR="$XDG_DATA_HOME/fnm"
-elif [ "$OS" = "Darwin" ]; then
-  FNM_INSTALL_DIR="$HOME/Library/Application Support/fnm"
 else
   FNM_INSTALL_DIR="$HOME/.local/share/fnm"
 fi
