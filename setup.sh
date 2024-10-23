@@ -49,6 +49,7 @@ mkdir -p "$FISH_CONFIG_DIR"
 if ! command -v fish > /dev/null 2>&1; then
   sudo apt install -y fish
   installed_fish="Yes"
+  copy "$REPO_DIR/fish/settings.fish" "$FISH_CONFIG_DIR/"
 else
   installed_fish="No"
 fi
@@ -130,7 +131,8 @@ if ! command -v psql > /dev/null 2>&1; then
   sudo sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
   sudo apt update
   sudo apt -y install postgresql
-  copy "$REPO_DIR/fish/postgres.fish" "$FISH_CONFIG_DIR/"
+  # TODO WSL needs something like this, but for correct Postgres version
+  #copy "$REPO_DIR/fish/postgres.fish" "$FISH_CONFIG_DIR/"
   echo "Installed Postgres"
 fi
 
