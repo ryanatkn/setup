@@ -45,7 +45,6 @@ fi
 
 # Fish Shell -- https://fishshell.com/
 FISH_CONFIG_DIR="$HOME/.config/fish/conf.d"
-mkdir -p "$FISH_CONFIG_DIR"
 if ! command -v fish > /dev/null 2>&1; then
   sudo apt install -y fish
   installed_fish="Yes"
@@ -117,7 +116,6 @@ fi
 # Copy VSCode configs
 REPO_VSCODE_DIR="$REPO_DIR/vscode"
 VSCODE_USER_DIR="$HOME/.config/Code/User"
-mkdir -p "$VSCODE_USER_DIR"
 copy "$REPO_VSCODE_DIR/settings.json" "$VSCODE_USER_DIR/"
 copy "$REPO_VSCODE_DIR/keybindings.json" "$VSCODE_USER_DIR/"
 copy "$REPO_VSCODE_DIR/snips.code-snippets" "$VSCODE_USER_DIR/snippets/"
