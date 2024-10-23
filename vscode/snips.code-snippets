@@ -51,14 +51,14 @@
 		"scope": "svelte,markdown",
 		"prefix": "nc",
 		"body": [
-			"<script lang=\"ts\">\n	// interface Props {\n	// }\n\n	// const {}: Props = \\$props();\n</script>\n\n$1"
+			"<script lang=\"ts\">\n\t// interface Props {\n\t// }\n\n\t// const {}: Props = \\$props();\n</script>\n\n$1"
 		]
 	},
 	"Svelte new component with children": {
 		"scope": "svelte,markdown",
 		"prefix": "ncc",
 		"body": [
-			"<script lang=\"ts\">\n	import type {Snippet} from 'svelte';\n\n	interface Props {\n		children: Snippet;\n	}\n\n	const {children}: Props = \\$props();\n</script>\n\n$1\n{@render children()}"
+			"<script lang=\"ts\">\n\timport type {Snippet} from 'svelte';\n\n\tinterface Props {\n\t\tchildren: Snippet;\n\t}\n\n\tconst {children}: Props = \\$props();\n</script>\n\n$1\n{@render children()}"
 		]
 	},
 	"JS import": {
