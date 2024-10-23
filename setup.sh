@@ -45,10 +45,12 @@ fi
 
 # Fish Shell -- https://fishshell.com/
 FISH_CONFIG_DIR="$HOME/.config/fish/conf.d"
+FISH_FUNCTIONS_DIR="$HOME/.config/fish/functions"
 if ! command -v fish > /dev/null 2>&1; then
   sudo apt install -y fish
   installed_fish="Yes"
   copy "$REPO_DIR/fish/settings.fish" "$FISH_CONFIG_DIR/"
+  copy "$REPO_DIR/fish/fish_prompt.fish" "$FISH_FUNCTIONS_DIR/"
 else
   installed_fish="No"
 fi
