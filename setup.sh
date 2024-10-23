@@ -44,7 +44,7 @@ if ! command -v git > /dev/null 2>&1; then
 fi
 
 # Fish Shell -- https://fishshell.com/
-FISH_CONFIG_DIR=~/.config/fish/conf.d
+FISH_CONFIG_DIR="$HOME/.config/fish/conf.d"
 mkdir -p "$FISH_CONFIG_DIR"
 if ! command -v fish > /dev/null 2>&1; then
   sudo apt install -y fish
@@ -90,7 +90,7 @@ if [ ! -d "$FNM_INSTALL_DIR" ]; then
 fi
 
 # create our conventional dev directory
-DEV_DIR=~/dev
+DEV_DIR="$HOME/dev"
 mkdir -p "$DEV_DIR"
 
 # configure Git
@@ -116,13 +116,13 @@ fi
 
 # Copy VSCode configs
 REPO_VSCODE_DIR="$REPO_DIR/vscode"
-VSCODE_USER_DIR=~/.config/Code/User
+VSCODE_USER_DIR="$HOME/.config/Code/User"
+mkdir -p "$VSCODE_USER_DIR"
 copy "$REPO_VSCODE_DIR/settings.json" "$VSCODE_USER_DIR/"
 copy "$REPO_VSCODE_DIR/keybindings.json" "$VSCODE_USER_DIR/"
 copy "$REPO_VSCODE_DIR/snips.code-snippets" "$VSCODE_USER_DIR/snippets/"
 
-# Install PostgreSQL
-
+# Install Postgres
 if ! command -v psql > /dev/null 2>&1; then
   echo "Installing Postgres"
   sudo apt install -y ca-certificates
