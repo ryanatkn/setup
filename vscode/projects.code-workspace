@@ -1,73 +1,73 @@
 {
-	"folders": [
-		{
-			"name": "belt",
-			"path": "belt"
-		},
-		{
-			"name": "cosmicplayground",
-			"path": "cosmicplayground"
-		},
-		{
-			"name": "earbetter",
-			"path": "earbetter"
-		},
-		{
-			"name": "fuz",
-			"path": "fuz"
-		},
-		{
-			"name": "fuz_blog",
-			"path": "fuz_blog"
-		},
-		{
-			"name": "fuz_code",
-			"path": "fuz_code"
-		},
-		{
-			"name": "fuz_gitops",
-			"path": "fuz_gitops"
-		},
-		{
-			"name": "fuz_mastodon",
-			"path": "fuz_mastodon"
-		},
-		{
-			"name": "fuz_template",
-			"path": "fuz_template"
-		},
-		{
-			"name": "gro",
-			"path": "gro"
-		},
-		{
-			"name": "moss",
-			"path": "moss"
-		},
-		{
-			"name": "ryanatkn.com",
-			"path": "ryanatkn.com"
-		},
-		{
-			"name": "spiderspace.org",
-			"path": "spiderspace.org"
-		},
-		{
-			"name": "svelte-intersect",
-			"path": "svelte-intersect"
-		},
-		{
-			"name": "webdevladder.net",
-			"path": "webdevladder.net"
-		},
-		{
-			"name": "zzz",
-			"path": "zzz"
-		},
-		{
-			"name": "zzz_wip",
-			"path": "zzz_wip"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "name": "belt",
+            "path": "belt"
+        },
+        {
+            "name": "cosmicplayground",
+            "path": "cosmicplayground"
+        },
+        {
+            "name": "dealt",
+            "path": "dealt"
+        },
+        {
+            "name": "earbetter",
+            "path": "earbetter"
+        },
+        {
+            "name": "fuz",
+            "path": "fuz"
+        },
+        {
+            "name": "fuz_blog",
+            "path": "fuz_blog"
+        },
+        {
+            "name": "fuz_code",
+            "path": "fuz_code"
+        },
+        {
+            "name": "fuz_gitops",
+            "path": "fuz_gitops"
+        },
+        {
+            "name": "fuz_mastodon",
+            "path": "fuz_mastodon"
+        },
+        {
+            "name": "fuz_template",
+            "path": "fuz_template"
+        },
+        {
+            "name": "gro",
+            "path": "gro"
+        },
+        {
+            "name": "moss",
+            "path": "moss"
+        },
+        {
+            "name": "oldfelt",
+            "path": "oldfelt"
+        },
+        {
+            "name": "ryanatkn.com",
+            "path": "ryanatkn.com"
+        },
+        {
+            "name": "spiderspace.org",
+            "path": "spiderspace.org"
+        },
+        {
+            "name": "webdevladder.net",
+            "path": "webdevladder.net"
+        },
+        {
+            "name": "zzz",
+            "path": "zzz"
+        }
+    ],
+    "settings": {}
 }
