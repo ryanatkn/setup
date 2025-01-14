@@ -19,6 +19,14 @@ What I had to do:
 - if it doesn't automatically open a prompt to create an Ubuntu user,
   go to Powershell and type `wsl`
 
+## Graceful shutdown
+
+This may be fixed, but for months I would periodically experience
+corrupt `.git` directories in my WSL installation,
+after numerous reinstallations of WSL and Windows.
+
+Running [off.bat](off.bat) seems to avoid the problem. Maybe Windows is fixed now, idk.
+
 ## My preferred options
 
 - Open a folder, click `...` in the title bar, click options, click the `view` tab,
