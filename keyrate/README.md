@@ -28,8 +28,9 @@ which links to `keyrate.exe` hosted [here on GitHub](https://github.com/EricTetz
 (see the releases)
 **I can't guarantee that the `.exe` won't hack you, and `.exe`s should be treated as hazardous**,
 so I'm refraining from directly linking to it.
+My build is [here](./keyrate.exe).
 (it's public domain and easily compiled from source, e.g.
-`.\zig.exe build-exe keyrate.c -O ReleaseSmall --strip -lc`)
+`.\zig.exe cc -Os -o keyrate.exe ..\keyrate\keyrate.c`)
 
 Example usage:
 
