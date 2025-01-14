@@ -86,8 +86,9 @@ if [ ! -d "$FNM_INSTALL_DIR" ]; then
   fnm install v22
   fnm use v22
   fnm default v22
-  npm i -g npm @ryanatkn/gro @changesets/cli
-  echo "Installed fnm, node, and gro"
+  npm i -g npm@latest
+  npm i -g @ryanatkn/gro @changesets/cli
+  echo "Installed fnm, node, npm, and gro"
 fi
 
 # create our conventional dev directory
