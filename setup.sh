@@ -83,9 +83,9 @@ if [ ! -d "$FNM_INSTALL_DIR" ]; then
   # install Node.js and global packages
   export PATH="$FNM_INSTALL_DIR:$PATH"
   eval "$(fnm env)"
-  fnm install v20
-  fnm use v20
-  fnm default v20
+  fnm install v22
+  fnm use v22
+  fnm default v22
   npm i -g npm @ryanatkn/gro @changesets/cli
   echo "Installed fnm, node, and gro"
 fi
@@ -125,7 +125,7 @@ copy "$REPO_VSCODE_DIR/snips.code-snippets" "$VSCODE_USER_DIR/snippets/"
 # Install Postgres
 if ! command -v psql > /dev/null 2>&1; then
   echo "Installing Postgres"
-  sudo apt install -y ca-certificates
+  sudo apt -y install curl ca-certificates
   sudo install -d /usr/share/postgresql-common/pgdg
   sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
   sudo sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'

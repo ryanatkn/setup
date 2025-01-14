@@ -17,8 +17,6 @@ It supports the following software:
 
 It's designed for distros with `apt` like Ubuntu for both standalone installations and WSL.
 
-> ⚠️ This seems to be failing badly on WSL now, idk what's wrong.
-
 ## Docs
 
 - [instructions](#instructions) (see below)
