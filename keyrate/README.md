@@ -25,12 +25,12 @@ but all is not lost:
 
 See [this Stackoverflow answer](https://stackoverflow.com/questions/171326/how-can-i-increase-the-key-repeat-rate-beyond-the-oss-limit/11056655#11056655)
 which links to `keyrate.exe` hosted [here on GitHub](https://github.com/EricTetz/keyrate).
-(see the releases)
-**I can't guarantee that the `.exe` won't hack you, and `.exe`s should be treated as hazardous**,
-so I'm refraining from directly linking to it.
-My build is [here](./keyrate.exe).
+See that project's releases, and here's [my build](./keyrate.exe).
 (it's public domain and easily compiled from source, e.g.
 `.\zig.exe cc -Os -o keyrate.exe ..\keyrate\keyrate.c`)
+
+> **Like all `.exe`s these should be treated as hazardous**.
+> I verified the code before compiling [my build](./keyrate.exe) but nothing more sophisticated.
 
 Example usage:
 
