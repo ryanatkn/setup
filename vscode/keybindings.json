@@ -60,5 +60,15 @@
 	{
 		"key": "ctrl+shift+w",
 		"command": "-workbench.action.closeWindow"
+	},
+	{
+		"key": "ctrl+shift+alt+backspace",
+		"command": "chatEditor.action.reject",
+		"when": "chat.hasEditorModifications && editorFocus && hasUndecidedChatEditingResource"
+	},
+	{
+		"key": "ctrl+backspace",
+		"command": "-chatEditor.action.reject",
+		"when": "chat.hasEditorModifications && editorFocus && hasUndecidedChatEditingResource"
 	}
 ]
